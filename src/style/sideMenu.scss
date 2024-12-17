@@ -1,0 +1,80 @@
+.p-panelmenu-header-content {
+  background-color: white !important;
+  border: none !important;
+  border-radius: 8px;
+}
+.p-panelmenu-content {
+  border: none !important;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+.p-panelmenu-header-link {
+  display: flex;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  ::before {
+    font-size: 1.5rem !important;
+    color: #262261;
+    
+  }
+
+  &:hover {
+    background-color: #1e90ff; // Example: light blue
+    color: #fff;
+
+    ::before {
+      color: #fff;
+    }
+  }
+}
+.p-panelmenu
+  .p-panelmenu-header
+  .p-panelmenu-header-content
+  .p-panelmenu-header-link
+  .p-submenu-icon {
+  position: absolute;
+  right: 0 !important;
+}
+.p-panelmenu .p-menuitem-link.p-highlight {
+  background-color: #1e90ff; // Example: light blue for active item
+  color: #fff;
+
+  i {
+    color: #fff;
+  }
+}
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Style the track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background: var(--main-10, #E8E9ED);
+  width: 10px;
+}
+
+/* Style the thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: #FFF;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888DA2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #111A45;
+  cursor: pointer;
+}
